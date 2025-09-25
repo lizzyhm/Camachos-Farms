@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camacho's Farms - Fresh Farm Products</title>
+    <meta name="description" content="Camacho's Farms - Your source for fresh, locally grown farm products. Order online with multiple payment options.">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Apple Pay -->
+    <meta name="apple-pay-capable" content="yes">
+    <meta name="apple-pay-supported-networks" content="visa,mastercard,amex,discover">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <h1><i class="fas fa-seedling"></i> Camacho's Farms</h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#cart" class="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                    </ul>
+                </nav>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Fresh Farm Products Delivered to Your Door</h2>
+                <p>Experience the finest locally grown produce from our family farm. Fresh, organic, and sustainably grown.</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">Shop Now</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Our Fresh Products</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Camacho's Farms</h2>
+                    <p>For over three generations, the Camacho family has been dedicated to providing the freshest, highest quality farm products to our community. We believe in sustainable farming practices that respect the land and produce the healthiest food possible.</p>
+                    <p>Our farm spans over 200 acres of rich, fertile land where we grow a variety of seasonal fruits, vegetables, and herbs. Every product is carefully harvested at peak ripeness to ensure maximum flavor and nutritional value.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Organic Certified</h3>
+                            <p>All our products are certified organic and pesticide-free</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-truck"></i>
+                            <h3>Fresh Delivery</h3>
+                            <p>Same-day delivery available within 25 miles</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h3>Family Owned</h3>
+                            <p>Three generations of farming expertise and care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>123 Farm Road, Countryside, ST 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@camachosfarms.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 8AM-6PM<br>Sat-Sun: 9AM-5PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Shopping Cart</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items"></div>
+                <div class="cart-total">
+                    <h3>Total: $<span id="cart-total">0.00</span></h3>
+                </div>
+                <div class="cart-actions">
+                    <button id="clear-cart" class="btn btn-secondary">Clear Cart</button>
+                    <button id="checkout-btn" class="btn btn-primary">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Checkout</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="checkout-summary">
+                    <h3>Order Summary</h3>
+                    <div id="checkout-items"></div>
+                    <div class="checkout-total">
+                        <h3>Total: $<span id="checkout-total">0.00</span></h3>
+                    </div>
+                </div>
+                
+                <div class="payment-options">
+                    <h3>Choose Payment Method</h3>
+                    <div class="payment-buttons">
+                        <button class="payment-btn apple-pay" id="apple-pay-btn">
+                            <i class="fab fa-apple"></i> Apple Pay
+                        </button>
+                        <button class="payment-btn venmo" id="venmo-btn">
+                            <i class="fab fa-venmo"></i> Venmo
+                        </button>
+                        <button class="payment-btn cashapp" id="cashapp-btn">
+                            <i class="fas fa-dollar-sign"></i> Cash App
+                        </button>
+                        <button class="payment-btn zelle" id="zelle-btn">
+                            <i class="fas fa-mobile-alt"></i> Zelle
+                        </button>
+                        <button class="payment-btn square" id="square-btn">
+                            <i class="fas fa-square"></i> Square
+                        </button>
+                        <button class="payment-btn card" id="card-btn">
+                            <i class="fas fa-credit-card"></i> Credit Card
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Credit Card Form -->
+                <div id="card-form" class="payment-form" style="display: none;">
+                    <h3>Credit Card Information</h3>
+                    <div class="form-group">
+                        <input type="text" id="card-number" placeholder="Card Number" maxlength="19">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="expiry-date" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="cvv" placeholder="CVV" maxlength="4">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cardholder-name" placeholder="Cardholder Name">
+                    </div>
+                    <button type="button" id="process-payment" class="btn btn-primary">Process Payment</button>
+                </div>
+
+                <!-- Alternative Payment Instructions -->
+                <div id="alt-payment-info" class="payment-info" style="display: none;">
+                    <div class="payment-details">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                    <button type="button" id="confirm-payment" class="btn btn-primary">Confirm Payment</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-seedling"></i> Camacho's Farms</h3>
+                    <p>Fresh, organic farm products delivered straight from our family farm to your table.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@camachosfarms.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Farm Road, Countryside, ST 12345</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Payment Methods</h3>
+                    <div class="payment-methods">
+                        <i class="fab fa-apple-pay"></i>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Camacho's Farms. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
