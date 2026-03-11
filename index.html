@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Alpaca Farm & Event Venue — Stem, NC</title>
+  <meta name="description" content="A family-owned farm and event venue in Stem, NC. Home to alpacas and goats, hosting weddings, cultural celebrations, birthdays and more since 2020. Rooted in Peruvian and Chilean tradition.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="La Alpaca Farm & Event Venue — Stem, NC">
+  <meta property="og:description" content="A unique farm venue rooted in Latin heritage. Weddings, celebrations & cultural events surrounded by alpacas and goats in Stem, NC.">
+  <meta property="og:image" content="./assets/farm-hero.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EventVenue",
+    "name": "La Alpaca Farm & Event Venue",
+    "description": "A family-owned alpaca and goat farm and event venue in Stem, NC, rooted in Peruvian and Chilean heritage. Hosting weddings, cultural celebrations, and private events since 2020.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Stem",
+      "addressRegion": "NC",
+      "addressCountry": "US"
+    },
+    "foundingDate": "2020",
+    "creator": {
+      "@type": "SoftwareApplication",
+      "name": "Perplexity Computer",
+      "url": "https://www.perplexity.ai/computer"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav" id="nav" aria-label="Main navigation">
+    <a href="#" class="nav__logo">
+      <!-- SVG Logo: Circle with alpaca silhouette -->
+      <svg class="nav__logo-mark" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="La Alpaca Farm logo">
+        <circle cx="22" cy="22" r="21" fill="var(--color-primary)" stroke="var(--color-gold)" stroke-width="1.5"/>
+        <!-- Alpaca silhouette -->
+        <g fill="white">
+          <!-- Body -->
+          <ellipse cx="22" cy="27" rx="9" ry="6.5"/>
+          <!-- Neck -->
+          <rect x="18.5" y="18" width="4.5" height="10" rx="2"/>
+          <!-- Head -->
+          <ellipse cx="21" cy="16" rx="4" ry="3.5"/>
+          <!-- Ear left -->
+          <ellipse cx="18.5" cy="12.5" rx="1.5" ry="2.5" transform="rotate(-15 18.5 12.5)"/>
+          <!-- Ear right -->
+          <ellipse cx="23.5" cy="12" rx="1.5" ry="2.5" transform="rotate(15 23.5 12)"/>
+          <!-- Snout/nose bump -->
+          <ellipse cx="20" cy="17.5" rx="2" ry="1.2"/>
+          <!-- Eye -->
+          <circle cx="19.5" cy="15.5" r="0.8" fill="var(--color-primary)"/>
+          <!-- Legs -->
+          <rect x="15" y="31" width="3" height="7" rx="1.5"/>
+          <rect x="19" y="31" width="3" height="7" rx="1.5"/>
+          <rect x="23" y="31" width="3" height="7" rx="1.5"/>
+          <rect x="27" y="31" width="3" height="7" rx="1.5"/>
+          <!-- Tail -->
+          <ellipse cx="31.5" cy="25" rx="2" ry="1.5" transform="rotate(20 31.5 25)"/>
+        </g>
+      </svg>
+      <span class="nav__logo-text">
+        La Alpaca Farm
+        <span>Event Venue · Stem, NC</span>
+      </span>
+    </a>
+
+    <ul class="nav__links" role="list">
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#calendar">Calendar</a></li>
+      <li><a href="#social">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav__cta">
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn--primary">Book an Event</a>
+    </div>
+
+    <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav__mobile" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+    <button id="mobileClose" style="position:absolute;top:1.5rem;right:1.5rem;font-size:1.5rem;color:var(--color-text-muted);background:none;border:none;cursor:pointer;" aria-label="Close menu">✕</button>
+    <a href="#about" class="mobile-link">Our Story</a>
+    <a href="#events" class="mobile-link">Events</a>
+    <a href="#calendar" class="mobile-link">Calendar</a>
+    <a href="#social" class="mobile-link">Gallery</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="#contact" class="btn btn--primary btn--lg" style="margin-top:1rem;">Book an Event</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__bg" id="heroBg"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="hero__badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        Family Farm &amp; Event Venue · Est. 2020 · Stem, NC
+      </div>
+      <h1 class="hero__title" id="hero-title">
+        Where Every Celebration Finds its <em>Heart</em>
+      </h1>
+      <p class="hero__subtitle">
+        A Peruvian &amp; Chilean family farm nestled in North Carolina, home to alpacas, goats, and unforgettable moments.
+      </p>
+      <div class="hero__actions">
+        <a href="#events" class="btn btn--gold btn--lg">Explore Events</a>
+        <a href="#calendar" class="btn btn--outline btn--lg" style="border-color:white;color:white;">View Calendar</a>
+      </div>
+    </div>
+    <a href="#about" class="hero__scroll" aria-label="Scroll down">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+    </a>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about" id="about" aria-labelledby="about-title">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image-wrap fade-in">
+          <img class="about__img-main" src="./assets/alpaca-closeup.jpg" alt="Friendly white alpaca at La Alpaca Farm in Stem, NC" loading="lazy" width="600" height="750">
+          <div class="about__img-badge">
+            <strong>2020</strong>
+            <span>Est. in NC</span>
+          </div>
+        </div>
+        <div class="about__content fade-in">
+          <div>
+            <span class="section__tag">Our Story</span>
+            <h2 class="section__title" id="about-title" style="text-align:left;margin-bottom:var(--space-4);">A Farm Born from<br>Two Cultures</h2>
+            <div class="about__flags" style="margin-bottom:var(--space-5);">
+              <!-- Peru flag SVG -->
+              <svg class="flag" viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg" aria-label="Peru flag">
+                <rect width="12" height="24" fill="#D91023"/>
+                <rect x="12" width="12" height="24" fill="white"/>
+                <rect x="24" width="12" height="24" fill="#D91023"/>
+              </svg>
+              <!-- Chile flag SVG -->
+              <svg class="flag" viewBox="0 0 36 24" xmlns="http://www.w3.org/2000/svg" aria-label="Chile flag">
+                <rect width="36" height="12" fill="white"/>
+                <rect y="12" width="36" height="12" fill="#D52B1E"/>
+                <rect width="12" height="12" fill="#003DA5"/>
+                <polygon points="6,2.5 7.5,7 12,7 8.5,9.5 9.5,14 6,11.5 2.5,14 3.5,9.5 0,7 4.5,7" fill="white" transform="translate(0,0)"/>
+              </svg>
+              <span style="font-size:var(--text-xs);color:var(--color-text-muted);font-style:italic;">Peruvian &amp; Chilean heritage</span>
+            </div>
+          </div>
+          <p class="about__text">
+            Nestled in the rolling hills of Stem, North Carolina, La Alpaca Farm is a labor of love from a family with deep roots in Peru and Chile. Since 2020, we have shared our passion for animals, community, and Latin culture with everyone who walks through our gates.
+          </p>
+          <p class="about__text">
+            Our farm is home to a herd of gentle alpacas and playful goats — gentle souls who have a way of making every guest smile. We opened our doors not just as a farm, but as a venue where memories are made: weddings, quinceañeras, baby showers, and celebrations honoring the rich tapestry of Latin American culture.
+          </p>
+          <div class="about__animals">
+            <div class="animal-card">
+              <div class="animal-card__icon">🦙</div>
+              <div class="animal-card__name">Alpacas</div>
+              <div class="animal-card__desc">Our fluffy herd from the Andean highlands</div>
+            </div>
+            <div class="animal-card">
+              <div class="animal-card__icon">🐐</div>
+              <div class="animal-card__name">Goats</div>
+              <div class="animal-card__desc">Curious, friendly, and always entertaining</div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn--primary" style="align-self:flex-start;margin-top:var(--space-2);">Plan Your Visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS / SERVICES ============ -->
+  <section class="section events" id="events" aria-labelledby="events-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Events &amp; Celebrations</span>
+        <h2 class="section__title" id="events-title">Every Occasion, Beautifully Hosted</h2>
+        <p class="section__desc">From intimate proposals to grand cultural festivals, our farm provides a unique backdrop for life's most meaningful moments.</p>
+      </div>
+
+      <div class="events__grid">
+        <!-- Weddings -->
+        <article class="event-card fade-in">
+          <img class="event-card__img" src="./assets/farm-wedding.jpg" alt="Elegant outdoor wedding ceremony at La Alpaca Farm with alpacas in the background" loading="lazy" width="600" height="375">
+          <div class="event-card__body">
+            <span class="event-card__tag">Weddings &amp; Engagements</span>
+            <h3 class="event-card__title">Your Dream Wedding</h3>
+            <p class="event-card__desc">Say "I do" surrounded by rolling green fields, string lights, and our beloved alpacas as the most charming wedding guests you've ever seen. We host weddings and engagement proposals.</p>
+          </div>
+        </article>
+
+        <!-- Cultural Events -->
+        <article class="event-card fade-in">
+          <img class="event-card__img" src="./assets/farm-fiesta.jpg" alt="Vibrant Latin cultural celebration at La Alpaca Farm with traditional dancing and decorations" loading="lazy" width="600" height="375">
+          <div class="event-card__body">
+            <span class="event-card__tag">Cultural Celebrations</span>
+            <h3 class="event-card__title">Celebrate Latin Heritage</h3>
+            <p class="event-card__desc">We proudly host events celebrating Peruvian, Chilean, and Latin culture broadly — from Fiestas Patrias to cultural festivals honoring the traditions that make our community vibrant.</p>
+          </div>
+        </article>
+
+        <!-- Parties -->
+        <article class="event-card fade-in">
+          <img class="event-card__img" src="./assets/farm-party.jpg" alt="Outdoor birthday party at the farm venue with guests celebrating around long tables with alpacas nearby" loading="lazy" width="600" height="375">
+          <div class="event-card__body">
+            <span class="event-card__tag">Private Celebrations</span>
+            <h3 class="event-card__title">Birthdays, Graduations &amp; More</h3>
+            <p class="event-card__desc">Make it unforgettable. We host birthday parties, graduation parties, quinceañeras, baby showers, and any occasion worth celebrating with great company and our adorable animals.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Farm &amp; Venue</span>
+        <h2 class="section__title" id="gallery-title">A Glimpse of Our Farm</h2>
+      </div>
+      <div class="gallery__grid">
+        <div class="gallery__item"><img class="gallery__img" src="./assets/farm-hero.jpg" alt="La Alpaca Farm at golden hour with alpacas and goats grazing" loading="lazy" width="840" height="560"></div>
+        <div class="gallery__item"><img class="gallery__img" src="./assets/farm-wedding.jpg" alt="Beautiful outdoor wedding ceremony at the farm venue" loading="lazy" width="600" height="375"></div>
+        <div class="gallery__item"><img class="gallery__img" src="./assets/alpaca-closeup.jpg" alt="Close-up of a friendly white alpaca at the farm" loading="lazy" width="600" height="450"></div>
+        <div class="gallery__item"><img class="gallery__img" src="./assets/farm-fiesta.jpg" alt="Latin cultural celebration event at the farm" loading="lazy" width="600" height="400"></div>
+        <div class="gallery__item"><img class="gallery__img" src="./assets/farm-party.jpg" alt="Birthday party celebration at the outdoor farm venue" loading="lazy" width="600" height="400"></div>
+        <div class="gallery__item"><img class="gallery__img" src="./assets/farm-hero.jpg" alt="Alpacas grazing at sunset with rolling green hills" loading="lazy" style="object-position: right center;" width="600" height="400"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CALENDAR ============ -->
+  <section class="section calendar-section" id="calendar" aria-labelledby="calendar-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Upcoming Events</span>
+        <h2 class="section__title" id="calendar-title">What's Coming Up</h2>
+        <p class="section__desc">Check our calendar for upcoming events, then grab your tickets through Eventbrite before they sell out.</p>
+      </div>
+
+      <div class="calendar-wrap">
+        <!-- Interactive Calendar -->
+        <div class="cal" id="calendar-widget" aria-label="Event calendar">
+          <div class="cal__header">
+            <h3 class="cal__month" id="calMonthYear" aria-live="polite">March 2026</h3>
+            <div class="cal__nav">
+              <button class="cal__nav-btn" id="calPrev" aria-label="Previous month">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+              </button>
+              <button class="cal__nav-btn" id="calNext" aria-label="Next month">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="cal__grid" id="calGrid" role="grid" aria-label="Calendar days"></div>
+          <div class="cal__legend">
+            <div class="cal__legend-item">
+              <div class="cal__legend-dot" style="background:var(--color-primary)"></div>
+              Event day
+            </div>
+            <div class="cal__legend-item">
+              <div class="cal__legend-dot" style="background:var(--color-gold)"></div>
+              Today
+            </div>
+          </div>
+        </div>
+
+        <!-- Upcoming Events Sidebar -->
+        <div class="cal__events-sidebar">
+          <h3 class="cal__sidebar-title">Upcoming Events</h3>
+          <p style="font-size:var(--text-xs);color:var(--color-text-muted);margin-top:-0.5rem;margin-bottom:0.5rem;">Click a highlighted date to view event details</p>
+          <div id="eventsList"></div>
+          <p style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-4);line-height:1.6;">
+            Can't find an event? Reach out to us about hosting a private celebration!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INTEGRATIONS ============ -->
+  <section class="section integrations" aria-label="Ticket purchasing integrations">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Buy Tickets</span>
+        <h2 class="section__title">Easy, Secure Ticket Purchases</h2>
+        <p class="section__desc">We've partnered with trusted platforms so you can easily purchase tickets for our upcoming events or pay for services — all safely and conveniently.</p>
+      </div>
+      <div class="integrations__cards">
+        <!-- Eventbrite -->
+        <div class="integration-card">
+          <!-- Eventbrite logo -->
+          <svg class="integration-card__logo" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg" aria-label="Eventbrite">
+            <text x="0" y="30" font-family="Plus Jakarta Sans, sans-serif" font-size="26" font-weight="700" fill="white">Eventbrite</text>
+          </svg>
+          <h3 class="integration-card__title">Browse &amp; Buy Event Tickets</h3>
+          <p class="integration-card__desc">All our public events are listed on Eventbrite. Browse upcoming festivals, cultural celebrations, and farm experiences — and secure your spot today.</p>
+          <a href="https://www.eventbrite.com" target="_blank" rel="noopener noreferrer" class="btn btn--gold btn--lg" style="width:100%;justify-content:center;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V22H4V12"/><path d="M22 7H2v5h20V7z"/><path d="M12 22V7"/><path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z"/><path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg>
+            View on Eventbrite
+          </a>
+        </div>
+        <!-- Square -->
+        <div class="integration-card">
+          <!-- Square logo -->
+          <svg class="integration-card__logo" viewBox="0 0 160 40" xmlns="http://www.w3.org/2000/svg" aria-label="Square">
+            <rect x="0" y="5" width="30" height="30" rx="5" fill="white" opacity="0.9"/>
+            <rect x="8" y="13" width="14" height="14" rx="2" fill="var(--color-primary)"/>
+            <text x="38" y="30" font-family="Plus Jakarta Sans, sans-serif" font-size="26" font-weight="700" fill="white">Square</text>
+          </svg>
+          <h3 class="integration-card__title">Secure Payments via Square</h3>
+          <p class="integration-card__desc">Book your private event and make deposits or payments securely through Square. Fast, reliable, and trusted by millions of small businesses.</p>
+          <a href="https://squareup.com" target="_blank" rel="noopener noreferrer" class="btn btn--gold btn--lg" style="width:100%;justify-content:center;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+            Pay with Square
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOCIAL / FOLLOW US ============ -->
+  <section class="section social" id="social" aria-labelledby="social-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Follow Along</span>
+        <h2 class="section__title" id="social-title">Join Our Community</h2>
+        <p class="section__desc">Stay connected! Follow us on Facebook and Instagram for the latest events, farm updates, alpaca moments, and cultural celebrations.</p>
+      </div>
+
+      <div class="social__platforms">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="social__platform-btn social__platform-btn--fb" aria-label="Follow us on Facebook">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          Facebook
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social__platform-btn social__platform-btn--ig" aria-label="Follow us on Instagram">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Instagram
+        </a>
+      </div>
+
+      <!-- Mock social posts - visual placeholders for real social feed -->
+      <div class="social__grid" role="list" aria-label="Recent social media posts">
+        <div class="social__post" role="listitem">
+          <img class="social__post-img" src="./assets/farm-hero.jpg" alt="La Alpaca Farm at golden hour" loading="lazy" width="400" height="400" style="object-position:center;">
+          <div class="social__post-body">
+            <div class="social__post-meta">
+              <svg class="social__post-platform" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" rx="5" fill="#1877f2"/><path d="M11 10.5h2.5L14 8H11V6.5c0-.7.3-1 1-1H14V3h-2.5C9.5 3 8.5 4 8.5 6V8H7v2.5h1.5V17H11z" fill="white"/></svg>
+              <span class="social__post-date">2 days ago</span>
+            </div>
+            <p class="social__post-caption">Golden hour on the farm ✨ Our alpacas and goats are loving this spring weather in Stem! 🦙 Come visit us!</p>
+          </div>
+        </div>
+        <div class="social__post" role="listitem">
+          <img class="social__post-img" src="./assets/farm-wedding.jpg" alt="Beautiful wedding ceremony at the farm" loading="lazy" width="400" height="400" style="object-position:center top;">
+          <div class="social__post-body">
+            <div class="social__post-meta">
+              <svg class="social__post-platform" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" rx="5" fill="url(#ig-grad)"/><defs><linearGradient id="ig-grad" x1="0" y1="20" x2="20" y2="0"><stop offset="0%" stop-color="#f09433"/><stop offset="50%" stop-color="#e1306c"/><stop offset="100%" stop-color="#833ab4"/></linearGradient></defs><rect x="4" y="4" width="12" height="12" rx="3" fill="none" stroke="white" stroke-width="1.5"/><circle cx="10" cy="10" r="3" fill="none" stroke="white" stroke-width="1.5"/><circle cx="14.5" cy="5.5" r="0.8" fill="white"/></svg>
+              <span class="social__post-date">1 week ago</span>
+            </div>
+            <p class="social__post-caption">Congratulations to this beautiful couple! 💍 What an honor to be the backdrop for their special day surrounded by our alpacas!</p>
+          </div>
+        </div>
+        <div class="social__post" role="listitem">
+          <img class="social__post-img" src="./assets/farm-fiesta.jpg" alt="Latin cultural celebration at the farm" loading="lazy" width="400" height="400" style="object-position:center;">
+          <div class="social__post-body">
+            <div class="social__post-meta">
+              <svg class="social__post-platform" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" rx="5" fill="#1877f2"/><path d="M11 10.5h2.5L14 8H11V6.5c0-.7.3-1 1-1H14V3h-2.5C9.5 3 8.5 4 8.5 6V8H7v2.5h1.5V17H11z" fill="white"/></svg>
+              <span class="social__post-date">2 weeks ago</span>
+            </div>
+            <p class="social__post-caption">Celebrating Latin culture and community! 🇵🇪🇨🇱 Our cultural events bring people together in the most beautiful way. Next one coming soon!</p>
+          </div>
+        </div>
+        <div class="social__post" role="listitem">
+          <img class="social__post-img" src="./assets/alpaca-closeup.jpg" alt="Adorable alpaca closeup" loading="lazy" width="400" height="400" style="object-position:center top;">
+          <div class="social__post-body">
+            <div class="social__post-meta">
+              <svg class="social__post-platform" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><rect width="20" height="20" rx="5" fill="url(#ig-grad2)"/><defs><linearGradient id="ig-grad2" x1="0" y1="20" x2="20" y2="0"><stop offset="0%" stop-color="#f09433"/><stop offset="50%" stop-color="#e1306c"/><stop offset="100%" stop-color="#833ab4"/></linearGradient></defs><rect x="4" y="4" width="12" height="12" rx="3" fill="none" stroke="white" stroke-width="1.5"/><circle cx="10" cy="10" r="3" fill="none" stroke="white" stroke-width="1.5"/><circle cx="14.5" cy="5.5" r="0.8" fill="white"/></svg>
+              <span class="social__post-date">3 weeks ago</span>
+            </div>
+            <p class="social__post-caption">Meet our newest farm resident! 🦙 She's already charmed every visitor who comes to the farm. Can you blame them?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Get in Touch</span>
+        <h2 class="section__title" id="contact-title">Come Visit Us</h2>
+        <p class="section__desc">Ready to plan your event or just want to meet the alpacas? We'd love to hear from you. Located in beautiful Stem, NC.</p>
+      </div>
+
+      <div class="contact__grid">
+        <div>
+          <div class="contact__info">
+            <div class="contact__detail">
+              <div class="contact__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="contact__detail-text">
+                <strong>Location</strong>
+                <p>Stem, North Carolina</p>
+                <p>Granville County</p>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.49 11.93a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.42 1h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.91a16 16 0 0 0 6.08 6.08l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="contact__detail-text">
+                <strong>Phone / WhatsApp</strong>
+                <a href="tel:+1-555-000-0000">(555) 000-0000</a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div class="contact__detail-text">
+                <strong>Email</strong>
+                <a href="mailto:hello@laalpacafarm.com">hello@laalpacafarm.com</a>
+              </div>
+            </div>
+            <div class="contact__detail">
+              <div class="contact__icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <div class="contact__detail-text">
+                <strong>Open for Events</strong>
+                <p>Year-round by reservation</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact__form" id="contactForm" novalidate>
+            <h3 style="font-family:var(--font-display);font-size:var(--text-lg);font-weight:600;color:var(--color-text);">Send Us a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Your Name</label>
+                <input class="form-input" type="text" id="name" name="name" placeholder="Jane Smith" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="jane@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="eventType">Event Type</label>
+              <select class="form-input" id="eventType" name="eventType">
+                <option value="">Select an event type…</option>
+                <option>Wedding</option>
+                <option>Engagement Proposal</option>
+                <option>Birthday Party</option>
+                <option>Graduation Party</option>
+                <option>Baby Shower</option>
+                <option>Cultural Celebration</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Tell Us About Your Vision</label>
+              <textarea class="form-input" id="message" name="message" placeholder="What kind of celebration are you dreaming of? Approximate date, number of guests, any special requests…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--lg" style="align-self:flex-start;" id="submitBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+            <div id="formSuccess" style="display:none;padding:var(--space-4);background:var(--color-gold-highlight);border:1px solid var(--color-gold);border-radius:var(--radius-lg);color:var(--color-text);font-size:var(--text-sm);">
+              Thank you! We'll be in touch soon to start planning your celebration. 🦙
+            </div>
+          </form>
+        </div>
+
+        <!-- Map -->
+        <div>
+          <div class="contact__map">
+            <iframe
+              title="La Alpaca Farm location in Stem, NC"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-78.87%2C36.15%2C-78.70%2C36.25&layer=mapnik&marker=36.20%2C-78.77"
+              loading="lazy"
+              allowfullscreen
+              aria-label="Map showing Stem, NC location"
+            ></iframe>
+          </div>
+          <p style="font-size:var(--text-xs);color:var(--color-text-faint);margin-top:var(--space-2);text-align:center;">
+            Stem, North Carolina · Granville County
+          </p>
+          <div style="margin-top:var(--space-8);display:flex;flex-direction:column;gap:var(--space-4);">
+            <p style="font-family:var(--font-display);font-size:var(--text-lg);font-weight:600;color:var(--color-text);">Follow Us</p>
+            <div style="display:flex;gap:var(--space-3);">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="btn btn--ghost" style="flex:1;justify-content:center;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                Facebook
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn--ghost" style="flex:1;justify-content:center;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="#" class="footer__logo">
+            <svg width="36" height="36" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="La Alpaca Farm">
+              <circle cx="22" cy="22" r="21" fill="var(--color-primary)" stroke="var(--color-gold)" stroke-width="1.5"/>
+              <g fill="white">
+                <ellipse cx="22" cy="27" rx="9" ry="6.5"/>
+                <rect x="18.5" y="18" width="4.5" height="10" rx="2"/>
+                <ellipse cx="21" cy="16" rx="4" ry="3.5"/>
+                <ellipse cx="18.5" cy="12.5" rx="1.5" ry="2.5" transform="rotate(-15 18.5 12.5)"/>
+                <ellipse cx="23.5" cy="12" rx="1.5" ry="2.5" transform="rotate(15 23.5 12)"/>
+                <ellipse cx="20" cy="17.5" rx="2" ry="1.2"/>
+                <circle cx="19.5" cy="15.5" r="0.8" fill="var(--color-primary)"/>
+                <rect x="15" y="31" width="3" height="7" rx="1.5"/>
+                <rect x="19" y="31" width="3" height="7" rx="1.5"/>
+                <rect x="23" y="31" width="3" height="7" rx="1.5"/>
+                <rect x="27" y="31" width="3" height="7" rx="1.5"/>
+                <ellipse cx="31.5" cy="25" rx="2" ry="1.5" transform="rotate(20 31.5 25)"/>
+              </g>
+            </svg>
+            <span class="footer__logo-text">La Alpaca Farm</span>
+          </a>
+          <p class="footer__tagline">A Peruvian &amp; Chilean family farm and event venue nestled in the heart of Stem, North Carolina. Est. 2020.</p>
+          <div class="footer__social-links">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Follow on Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Follow on Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer__col-title">Quick Links</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Events -->
+        <div>
+          <h3 class="footer__col-title">Events We Host</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="#events">Weddings</a></li>
+            <li><a href="#events">Graduations</a></li>
+            <li><a href="#events">Birthday Parties</a></li>
+            <li><a href="#events">Baby Showers</a></li>
+            <li><a href="#events">Cultural Fiestas</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h3 class="footer__col-title">Contact</h3>
+          <ul class="footer__links" role="list">
+            <li><a href="tel:+1-555-000-0000">(555) 000-0000</a></li>
+            <li><a href="mailto:hello@laalpacafarm.com">hello@laalpacafarm.com</a></li>
+            <li><a href="#contact">Stem, NC</a></li>
+            <li><a href="https://www.eventbrite.com" target="_blank" rel="noopener noreferrer">Eventbrite Tickets</a></li>
+            <li><a href="https://squareup.com" target="_blank" rel="noopener noreferrer">Pay via Square</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© 2026 La Alpaca Farm &amp; Event Venue. Stem, NC. All rights reserved.</p>
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer__pplx">Created with Perplexity Computer</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
