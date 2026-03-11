@@ -1,5 +1,5 @@
 /* ============================================
-   La Alpaca Farm — Interactive JS
+   Camacho's Farms — Interactive JS
    ============================================ */
 
 // ── Theme Toggle ─────────────────────────────
